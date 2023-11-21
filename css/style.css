@@ -1,5 +1,16 @@
 /*.html*/
+header{
 
+}
+
+
+
+footer{
+    background-color: #252525;
+}
+footer p{
+    color: white;
+}
 
 
 /*index.html*/
@@ -16,5 +27,5 @@
 
 /*media querries*/
 @media only screen and (min-width: 1000px) {
-    
+
 }
