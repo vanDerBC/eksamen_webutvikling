@@ -1,16 +1,28 @@
 /*.html*/
+body{
+    
+}
+
+
 header{
 
 }
 
 
+main{
 
-footer{
+}
+
+
+/*footer{
     background-color: #252525;
+}
+footer ul a{
+    color: white;
 }
 footer p{
     color: white;
-}
+}*/
 
 
 /*index.html*/
@@ -22,6 +34,7 @@ footer p{
 
 
 /*about.html*/
+
 
 
 
