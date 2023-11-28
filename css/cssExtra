@@ -19,7 +19,12 @@ header ul li a{
     text-decoration: none;
     color: black;
 }
-
+header ul li .contact-btn{
+    background-color: #e6bd43;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
 header nav ul li a::before{
     content: " ";
     position: absolute;

@@ -11,10 +11,10 @@ header{
     text-align: center;
     margin-top: 20px;
 }
-header ul li{
+header nav ul li{
     list-style: none;
     padding: 7px;
-    margin-right: 40px;
+    margin-right: 46px;
 }
 header ul li a{
     text-decoration: none;
@@ -30,6 +30,11 @@ header ul li .contact-btn{
 }
 header ul li a:visited{
     text-decoration: none;
+}
+header ul li a:hover{
+    font-weight: bold;
+    border-bottom: solid;
+    border-color: #e6bd43;
 }
 header ul li a:active{
     font-weight: bold;
@@ -70,6 +75,36 @@ footer ul li a{
 
 
 /*index.html*/
+.index-image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+.index-image img{
+    width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+.index-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 20px;
+}
+.read-more-btn{
+    background-color: #e6bd43;
+    text-decoration: none;
+    color: black;
+    padding: 8px;
+}
+
+
 .sub-head{
     display: flex;
     text-align: center;
@@ -86,6 +121,7 @@ footer ul li a{
     padding: 30px;
 }
 .about-company img{
+    max-width: 629px;
     width: 100%;
 }
 .about-company h3{
@@ -116,12 +152,15 @@ footer ul li a{
     display: grid;
     justify-items: center;
     padding: 20px;
+    margin-left: 60px;
+    margin-right: 60px;
 }
+
 
 
 .news{
     background-color: rgb(197, 197, 197);
-    padding: 20px;
+    padding: 50px;
 }
 .news{
     display: grid;
@@ -131,8 +170,6 @@ footer ul li a{
     text-decoration: none;
     color: black;
     background-color: #e6bd43;
-    border-style: solid;
-    border-width: px;
     padding: 3px;
 }
 
@@ -140,13 +177,31 @@ footer ul li a{
 
 
 /*products.html*/
-.main-pro{
-    padding: 20px;
+.pro-image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.pro-image img{
+    max-width: 100%;
+    height: auto;
+    opacity: 0.5;
+}
+.pro-image h1{
+    position: absolute;
+    font-weight: bold;
+    font-size: 50px;
 }
 
 
-.jobs{
-    text-align: center;
+.jobs article{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .jobs a{
     text-decoration: none;
@@ -156,39 +211,78 @@ footer ul li a{
 }
 
 
-
-.main-pro article h2{
-    padding: 15px;
+.main-pro section{
+    padding: 20px;
+}
+.main-pro section h2{
+    padding: 20px;
     margin: 50px;
     border-bottom: solid;
     border-color: #e6bd43;
-    border-bottom: 50%;
+    
 }
-.main-pro article p{
+.main-pro section p{
     text-align: left;
     margin-left: 50px;
+    font-weight: bold;
 }
 
 
-.branding article{
-    display: grid;
+.article-image{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    justify-content: space-around;
+    margin: 20px;
 }
 
-.design article{
-    display: grid;
-    justify-content: center;
-}
 
-.dev article{
-    display: grid;
-    justify-content: center;
+.branding img{
+    max-width: 629px;
+    width: 100%;
+}
+.design img{
+    max-width: 629px;
+    width: 100%;
+}
+.dev img{
+    max-width: 629px;
+    width: 100%;
 }
 
 
 
 
 /*about.html*/
+.about-image{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.about-image img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.about-text{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+}
+.get-in-btn{
+    background-color: #e6bd43;
+    text-decoration: none;
+    color: black;
+}
+
+
 .services{
     display: grid;
     text-align: center;
@@ -200,10 +294,13 @@ footer ul li a{
     background-color: #e6bd43;
     padding: 20px;
 }
-
+.clients h2{
+    text-align: center;
+}
 .clients img{
-    display: grid;
-   padding: 10px; 
+   
+    padding: 10px;
+   
 }
 
 
@@ -226,6 +323,13 @@ footer ul li a{
     height: 150px;
     width: 100%;
 }
+.send-message-btn{
+    background-color: #e6bd43;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    margin: 5px;
+}
 .contact h3{
     text-align: left;
     margin-left: 20px;
@@ -242,4 +346,28 @@ footer ul li a{
 }
 .cont-loca i{
     margin-right: 10px;
+}
+
+
+
+
+/*media querries*/
+@media only screen and (min-width: 1000px) and (max-width: 1600px) {
+    /*.html*/
+    header{
+        display: flex;
+        margin: 5px;
+    }
+    header nav ul li{
+        display: inline-block;
+    }
+    #logoTop{
+        display: flex;
+        justify-content: left;
+    }
+
+    /*index.html*/
+    .our-services{
+       
+    }
 }
