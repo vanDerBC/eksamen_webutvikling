@@ -1,44 +1,245 @@
 /*.html*/
 body{
-    
+    font-family: "trirong", serif;
+    background-color: rgb(241, 241, 241);
 }
 
 
 header{
-
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+header ul li{
+    list-style: none;
+    padding: 7px;
+    margin-right: 40px;
+}
+header ul li a{
+    text-decoration: none;
+    color: black;
+}
+header ul li .contact-btn{
+    background-color: #e6bd43;
+    padding: 3px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0.5px;
+    padding-bottom: 0.5px;
+}
+header ul li a:visited{
+    text-decoration: none;
+}
+header ul li a:active{
+    font-weight: bold;
+    border-bottom: solid;
+    border-color: #e6bd43;
 }
 
 
-main{
-
-}
-
-
-/*footer{
+footer{
     background-color: #252525;
 }
-footer ul a{
+footer img{
+    margin-top: 20px;
+}
+footer a{
+    display: grid;
+    justify-content: center;
+}
+footer .comp-name{
+    text-align: center;
     color: white;
 }
-footer p{
+footer ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 10px;
+}
+footer ul li{
+    list-style: none;
+    margin: 10px;
+}
+footer ul li a{
     color: white;
-}*/
+    
+}
+
 
 
 /*index.html*/
+.sub-head{
+    display: flex;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.about-company{
+    background-color: #e6bd43;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+.about-company img{
+    width: 100%;
+}
+.about-company h3{
+    text-align: center;
+    padding: 10px;
+}
+.about-company p{
+    text-align: center;
+    padding: 10px;
+}
+.about-company .go-to-btn{
+    color: black;
+    text-decoration: none;
+    border-style: solid;
+    border-width: 1px;
+}
+.go-to-btn{
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px 24px;
+}
+
+
+.our-services h2{
+    text-align: center;
+}
+.our-services article{
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+}
+
+
+.news{
+    background-color: rgb(197, 197, 197);
+    padding: 20px;
+}
+.news{
+    display: grid;
+    justify-items: center;
+}
+.submit-btn{
+    text-decoration: none;
+    color: black;
+    background-color: #e6bd43;
+    border-style: solid;
+    border-width: px;
+    padding: 3px;
+}
+
 
 
 
 /*products.html*/
+.main-pro{
+    padding: 20px;
+}
+
+
+.jobs{
+    text-align: center;
+}
+.jobs a{
+    text-decoration: none;
+    color: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+
+
+.main-pro article h2{
+    padding: 15px;
+    margin: 50px;
+    border-bottom: solid;
+    border-color: #e6bd43;
+    border-bottom: 50%;
+}
+.main-pro article p{
+    text-align: left;
+    margin-left: 50px;
+}
+
+
+.branding article{
+    display: grid;
+    justify-content: center;
+}
+
+.design article{
+    display: grid;
+    justify-content: center;
+}
+
+.dev article{
+    display: grid;
+    justify-content: center;
+}
+
 
 
 
 /*about.html*/
+.services{
+    display: grid;
+    text-align: center;
+    padding: 20px;
+}
 
 
+.clients{
+    background-color: #e6bd43;
+    padding: 20px;
+}
+
+.clients img{
+    display: grid;
+   padding: 10px; 
+}
 
 
-/*media querries*/
-@media only screen and (min-width: 1000px) {
-
+.contact h2{
+    text-align: center;
+    margin-top: 100px;
+}
+.contact .send-message{
+    display: grid;
+    justify-items: center;
+    margin: 60px;
+}
+.contact .message-name{
+    width: 100%;
+}
+.contact .message-branding{
+    width: 100%;
+}
+.contact .message-contact{
+    height: 150px;
+    width: 100%;
+}
+.contact h3{
+    text-align: left;
+    margin-left: 20px;
+}
+.contact-info p{
+    display: grid;
+    justify-items: center;
+    padding: 20px;
+}
+.cont-loca{
+    display: grid;
+    justify-items: left;
+    margin: 20px;
+}
+.cont-loca i{
+    margin-right: 10px;
 }
