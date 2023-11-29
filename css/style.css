@@ -81,11 +81,9 @@ footer ul li a{
     justify-content: center;
     align-items: center;
     width: 100%;
-    margin: 0 auto;
 }
 .index-image img{
     width: 100%;
-    height: auto;
     opacity: 0.5;
 }
 .index-text{
@@ -96,6 +94,7 @@ footer ul li a{
     align-items: center;
     text-align: center;
     margin: 20px;
+    max-width: 75%;
 }
 .read-more-btn{
     background-color: #e6bd43;
@@ -151,10 +150,8 @@ footer ul li a{
 .our-services article{
     display: grid;
     justify-items: center;
-    padding: 20px;
-    margin-left: 60px;
-    margin-right: 60px;
 }
+
 
 
 
@@ -238,15 +235,18 @@ footer ul li a{
 
 
 .branding img{
-    max-width: 629px;
+    max-width: 350px;
+    min-width: 200px;
     width: 100%;
 }
 .design img{
-    max-width: 629px;
+    max-width: 350px;
+    min-width: 200px;
     width: 100%;
 }
 .dev img{
-    max-width: 629px;
+    max-width: 350px;
+    min-width: 200px;
     width: 100%;
 }
 
@@ -275,11 +275,13 @@ footer ul li a{
     align-items: center;
     text-align: center;
     margin: 10px;
+    max-width: 75%;
 }
 .get-in-btn{
     background-color: #e6bd43;
     text-decoration: none;
     color: black;
+    padding: 5px;
 }
 
 
@@ -297,16 +299,17 @@ footer ul li a{
 .clients h2{
     text-align: center;
 }
-.clients img{
-   
-    padding: 10px;
-   
+.clients-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 
-.contact h2{
+.contact-h2{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .contact .send-message{
     display: grid;
@@ -337,16 +340,21 @@ footer ul li a{
 .contact-info p{
     display: grid;
     justify-items: center;
+    align-items: center;
     padding: 20px;
 }
-.cont-loca{
+.contact-info p i{
     display: grid;
-    justify-items: left;
+    justify-content: center;
+    align-items: center;
     margin: 20px;
 }
-.cont-loca i{
-    margin-right: 10px;
+
+.go-maps img{
+    width: 100%;
+    height: auto;
 }
+
 
 
 
@@ -354,20 +362,119 @@ footer ul li a{
 /*media querries*/
 @media only screen and (min-width: 1000px) and (max-width: 1600px) {
     /*.html*/
-    header{
+    header nav{
         display: flex;
-        margin: 5px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
     }
-    header nav ul li{
+    
+    header ul li{
         display: inline-block;
     }
-    #logoTop{
-        display: flex;
-        justify-content: left;
-    }
+    
+
+
+   footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+   }
+   footer ul{
+    font-size: 20px;
+   }
+
 
     /*index.html*/
-    .our-services{
-       
+   .index-text {
+    max-width: 50%;
+}
+
+
+
+    .our-serv-art{
+        display: flex;
+        padding: 30px;
     }
+    .our-serv-art article{
+        margin: 20px;
+    }
+
+
+    .about-company{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .about-company img{
+        max-width: 100%;
+    }
+   
+
+
+    /*product.html*/
+    .jobs article{
+        display: flex;
+        justify-content: left;
+        margin-left: 50px;
+    }
+
+
+    .branding img{
+        max-width: 629px;
+        min-width: 350px;
+        width: 100%;
+    }
+    .design img{
+        max-width: 629px;
+        min-width: 350px;
+        width: 100%;
+    }
+    .dev img{
+        max-width: 629px;
+        min-width: 350px;
+        width: 100%;
+    }
+
+
+    /*about.html*/
+    main .about-text{
+        background-color: #d3d3d3; opacity: 0.8;
+        display: flex;
+        justify-content: left;
+        align-items: left;
+        
+    }
+
+
+
+    .about-text{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: right;
+        text-align: center;
+        margin: 10px;
+        max-width: 50%;
+    }
+
+
+    .serv-art{
+        display: flex;
+        padding: 30px;
+    }
+    .serv-art article{
+        margin: 20px;
+    }
+
+
+    .contact{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+   
 }
